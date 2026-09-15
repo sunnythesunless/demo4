@@ -1,0 +1,6 @@
+{
+  "name": "Everbright Uniforms",
+  "description": "B2B and institutional uniform manufacturing and procurement platform for security, healthcare, hospitality, corporate, and industrial workforces.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

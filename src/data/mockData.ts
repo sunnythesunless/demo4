@@ -1,0 +1,302 @@
+import { Product, PairedProduct } from '../types';
+
+export const LOGO_URL = "https://lh3.googleusercontent.com/aida/AEtjO1VIjhIEOfPD4y5G4Bf-S8A_NRlFiGhDPAiIO7k2Y2C_UhjgFWnkNctZsLdusAEX6FJmmaEeD8DtYIuaSf2fcxmMEdcliO8Sux5c5byEBWzmZ5dIVfqTsiVeYRdUioX6ZbrlQLAsdIX_PQ2pEnntCXStcC2IXPxm2W9HuflA11M_Vxb8sjoE58PTV29j-xS1PJhV0Wr28CZuO-ip_rA_gJdmJZ666EAQuCBIB6e2Gzft6nld9cNYmm1aBw";
+
+export const HERO_BG_IMAGE = "https://lh3.googleusercontent.com/aida-public/AB6AXuAhrev5BFCfFZrbLVpVai6sAMJiW_2Kkmr36TgQAxZ4Rcao6kR76ktPd33MPCsIDUm1sboOyi61IEFREPmcqyYhJEU22wp_jFwrUm-xSgk1_KU8FfojybmYplHFGCfmVC5yDzNpofY3YZDHeskFlHh93hht0zVBJ9zjE5HexQ7895euekva0oDXUTYdEl7VTL0KWutw8bx5fcet7z8MPXfU7vdQnswyYWMY78pDaG3U5aMMsfgJyyI";
+
+export const TRACKING_MAP_IMAGE = "https://lh3.googleusercontent.com/aida-public/AB6AXuB7pW9Id1ARSqw_zl2KAWUGbur3w6mfXDCuJD38UHV2IAyCAO2RLQkIKnyocH4ZKEZEK40gybNcbOH5WhlwtVXCpDLnD-jMvJ7rJyjcwofJyRcucq2G0H2Ysy7W6d2BLIsLsCMNb5DEgNNLNjhKa_JOkPasv7-CO56-fVW_9yahYeaUP3ZKFg2Uy46IJZXRfnHmW2_z7L5P5XseiSBT_s6lD7EOMVzrs5S46n0XNiRsuCMFoNwxYvo";
+
+export const PRODUCTS: Product[] = [
+  {
+    id: '101',
+    name: 'Heavy-Duty Security Guard Uniform Set',
+    category: 'Security',
+    price: 1299,
+    originalPrice: 1799,
+    bulkTierPrice: 999,
+    rating: 4.8,
+    reviewsCount: 124,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuChIUrBg-QMVQMzooG82379qweBFdyywQyqVa4OILVvmcBLdxtOixJHh9CQj7TsSWLvVAI2L8XH_sjvoQQTD14ecRsLjcCMtpXxfwT3sJuMOQicFcjs_jKWW5mVSp34hkC0AJuQsSuKiw_ieexehmsxiSyp7fvAIGkJqZR1X9cg-gNnJmJmQWEGLPX1wUy_zl1X6qq_rYCP8oAaOKOxCesi7A80YD0LCsmmxdNGTaNov37mLg-qRbM',
+    gallery: [
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuChIUrBg-QMVQMzooG82379qweBFdyywQyqVa4OILVvmcBLdxtOixJHh9CQj7TsSWLvVAI2L8XH_sjvoQQTD14ecRsLjcCMtpXxfwT3sJuMOQicFcjs_jKWW5mVSp34hkC0AJuQsSuKiw_ieexehmsxiSyp7fvAIGkJqZR1X9cg-gNnJmJmQWEGLPX1wUy_zl1X6qq_rYCP8oAaOKOxCesi7A80YD0LCsmmxdNGTaNov37mLg-qRbM',
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuDEC9qTiNExLrAAqpS44TisGVwCWuLjxprbvVtpRimmjOLfNRbZZEaIM1HL1WNJE8-ly7HR6HxY73KllqzSOf_CPglQq1CIrbK5oUlyYHjOSCeFepeswn7NNGZPq2CFWZS1fmbXSzIzvh1b4hfJ2loHcRM7yIvF0hN4zhFtD84dwJ2Hag1uiPzUlfFlzK291oNn9gnENwjrmjuLzfEPDebJYIc_XFy5mEn4oFvb1UBCEYsqbzW1LFw',
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuBn68_lF0XEpxltPyY0bj32icgjib70Xvxq8ON7EH-IBVKiC-BbXhQtRRH-hfqchB6jW-YM0gq60JgrJzQXc-X3JWvKLRW0B9n_qhr6z0YwxpSzw3Wv7y1bkDpJErCu8EtbyK_RH_kvtvmpsZ0GerNYG1FEwdotP2VkMA2M_iRlY4WVSoRYW33iOV0mL4hgny_q-fMZFM968eALrrFHIiXSkRjDIs5N6PeHbK52aUWj_sGgRSVLEH8',
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuCO71ayoxiPIdga2U1GDHWM4lYknDrmzZg7esoi-gcibi-WCY6Pcy9x05JDGa9MKy6q2E4IxLUZlXZlRgn7SMH2JruHYrp-d6LZxcpyEbzZtRBHsyHRYKVm-fo07ZLmrCwgPvEswgPU_gA0HNC_CzGU2GoN-_JS96vj7tn-gNSoG5tp7P5Bl1WHVw_8FGBwzUEL9bQpA58h6nAlKknHjRg9TzWE1PA3nbYKcpFKb7gGIRynO2Xy84Y'
+    ],
+    description: 'Twill poly-cotton, anti-wrinkle weave with utility badge slots and reinforced pockets.',
+    badge: 'Best Seller',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    fabric: 'Poly-Viscose',
+    popularity: 97,
+    dateAdded: '2024-03-11',
+    sku: 'EBU-SEC-402'
+  },
+  {
+    id: '102',
+    name: 'Medical Antibacterial Scrub Set',
+    category: 'Hospital',
+    price: 899,
+    originalPrice: 1250,
+    bulkTierPrice: 720,
+    rating: 4.9,
+    reviewsCount: 98,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCR4BRhpCYMGWcgxJbmIFVhssP_8rraGlV_QIraUZTJdNHGkgLx3_YvMTB-gm7U2jF83XfeEk4VQtMkp6i4qnC9YlcPsp5MsdNFa2NIuTxmZaWioJj10zLLcqDoz4tS1pd3GcbJ4kXAYgPPScnxHHzcQda7lN2_jvFu7SeFfpLa4fYWzrMLxrH35gGi9Popo4qXRyAhMX_L_hJXX58YSczx9epdvLohdvnib8br-BP3OEhQfg8Wg4o',
+    description: 'Silvadur antimicrobial wash, moisture-wicking 4-way stretch fabric for long clinical shifts.',
+    badge: 'B2B Top Pick',
+    sizes: ['S', 'M', 'L', 'XL'],
+    fabric: 'Antimicrobial',
+    popularity: 99,
+    dateAdded: '2024-03-10',
+    sku: 'EBU-MED-108'
+  },
+  {
+    id: '103',
+    name: 'Executive Chef Double-Breasted Coat',
+    category: 'Hotel & Chef',
+    price: 1450,
+    originalPrice: 1990,
+    bulkTierPrice: 1199,
+    rating: 4.7,
+    reviewsCount: 72,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDzGZkC4SMJgtksE1W-TAPssPD_f2T7EYzY_VN1YaTgHb9kANDijzpk7rpwsNzz3gxqHn7_HUYLmvrMOQ2pDKZGQ4vwawiexR5JMyLBE28HnlbEfBOzvt4hJI07EfxtLyQrlUrCS8KI8bCv0QQ0qE6onwHpp6eyCx6g44ZO1FAFAIEUdhWedJEHl6UqzG6abS9TbqxBYdLYkoD-1mpF6zvFYZ3g4xZs_oFTGiZouUjOQ4IQQexpK1g',
+    description: 'Heat-resistant cotton rich weave with underarm mesh airflow vents and hand-rolled cloth buttons.',
+    badge: 'Hospitality Grade',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    fabric: 'Cotton',
+    popularity: 92,
+    dateAdded: '2024-03-01',
+    sku: 'EBU-HOS-203'
+  },
+  {
+    id: '104',
+    name: 'Reflective High-Vis Industrial Overalls',
+    category: 'Industrial',
+    price: 1850,
+    originalPrice: 2400,
+    bulkTierPrice: 1499,
+    rating: 4.9,
+    reviewsCount: 150,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAJEySWdWfR2qc31QE6fqJhi_cta-urrnaw2oXpofmV-c7j9oTjLBzxBB9FNB0E4RCZIQg-1D7OvUmD1dWAmhs-g3j1fvovvBMhgLqEkK3dmS2Nv0HrljMa4rt84oXwtJv-zLcPHp_4SRwMCJVfl7nNqTiZvpHiiTFsLr8hIYHFGZK3hKQJ_C_TPCb2MWqXfsD5-5rFnvY00MxBtTNBswuvL6m1tlfhiV83Fw-zmbx6HLaCC21xF_U',
+    description: 'Flame retardant treated, heavy gauge two-way brass zipper closures with 3M silver bands.',
+    badge: 'Heavy Duty',
+    sizes: ['M', 'L', 'XL', 'XXL'],
+    fabric: 'Flame Retardant',
+    popularity: 95,
+    dateAdded: '2024-03-12',
+    sku: 'EBU-IND-501'
+  },
+  {
+    id: '105',
+    name: 'Corporate Classic Navy Two-Piece Suit',
+    category: 'Corporate',
+    price: 3499,
+    originalPrice: 4800,
+    bulkTierPrice: 2490,
+    rating: 4.9,
+    reviewsCount: 84,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAcztn3zp2FglWsTRugL6y_9C3iOtLkMql8RSAN9E_PX4y-SaukpE88yIDSAeQKgjrCkUbYJuccJSW8yRVO0f6mNGb2pNyWLqyTCmF04hbgMteKQiKXT9zId7U1wqmlXo5_ZQMjN08jbAtitcodt9RVbzCMNigphQxqCdamhHx3W3yxYMpkdxHbSF3AJIjqS1OmiMVpsbVV4cWk4sAvhjC1-70LhNxpAhbNc9EYoNK936IIvp10h2I',
+    description: 'Poly-viscose wrinkle-shield construction with comfort inner lining for executive presentation.',
+    badge: 'Premium Cut',
+    sizes: ['38', '40', '42', '44'],
+    fabric: 'Poly-Viscose',
+    popularity: 91,
+    dateAdded: '2024-02-15',
+    sku: 'EBU-COR-301'
+  },
+  {
+    id: '106',
+    name: 'Dry-Fit Custom Embroidered Polo',
+    category: 'Custom Tees',
+    price: 499,
+    originalPrice: 799,
+    bulkTierPrice: 350,
+    rating: 4.8,
+    reviewsCount: 210,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAsRcoMNn0OJLMeWtzmTI6JYn-jjjMFV6VAIUqFI73EPKx0YW_OltNbeptZRuKUSVterVimnBZZVXqfATGUfETVz4RpXlGt5rNNE47Irv-wZO8nvXTpUBSh5DrosKDLTucu2tW4zC_9CIvadZU1WrCTuF2zo-HW5MVa6D6U3GAGIT_f-A-IEHpDKw_Jhq4YaqTLIWqj5YR0oysAIml0dApmEaez4DW0weJ8w2QRDXWWznckCDTlZpw',
+    description: '220 GSM combed pique cotton with high color fastness guarantee and anti-curl collars.',
+    badge: 'Custom Ready',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    fabric: 'Cotton',
+    popularity: 98,
+    dateAdded: '2024-03-05',
+    sku: 'EBU-TEE-601'
+  },
+  {
+    id: '107',
+    name: 'Antimicrobial MedPro Scrub Set (Teal)',
+    category: 'Hospital',
+    price: 1299,
+    originalPrice: 1799,
+    bulkTierPrice: 999,
+    rating: 4.9,
+    reviewsCount: 142,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBLOXT8Q33-LOQ0D6k3RQ8Wv4KSiqziWkwDqozpC2cbWq4oHLdeHaL_Lc6kwgTQ8wSCU-DSVuwpb-ZHHjCyS7gecFsglEXSYi09qgNatMnuP7YKtJtoMcwufewaKZqgHDv50YXBWvqdUVLklbeHrxF-Ox1TJLMlDl_Wj3zlIkSfiU1QXGUZ-8-GUpMGQ4d8kuyTke7TN8ug9gNnV_MgAiS4PyqaeK7Ef840z8_RNcSqlGdHnnazpI8',
+    description: 'Fluid-repellent poly-cotton blend scrub suit with 4 deep utility pockets and pen slots.',
+    badge: 'Hospital',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    fabric: 'Antimicrobial',
+    popularity: 98,
+    dateAdded: '2024-03-10',
+    sku: 'EBU-MED-109'
+  },
+  {
+    id: '108',
+    name: 'Classic Consultation Lab Coat',
+    category: 'Hospital',
+    price: 950,
+    originalPrice: 1100,
+    bulkTierPrice: 720,
+    rating: 4.8,
+    reviewsCount: 118,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBbaJp1JTnUzrEo2AaWvLEAlhj5t-M1slS0qu-ng72IVP7l7ot63tNMmrRXPYFyePw-oFBEfHgfm-QnaOQ01lfN-7_G5HYFudQ5uLp1L5BY8ge5wwgOxMLm4I5gCd_iRBk15PKfledVM48TX7Y5TxKMz6IXQKweg2Ox249ejmSKZ7BFFDq5tt3L9EREvsIEEqQH0ggrhtBIgYg_-YbBo38bqQ95Y5ZYZBUOh6bsKv1YN1HdJJw1HfU',
+    description: 'Bleach-resistant dense weave cotton twill coat with reinforced side access pockets.',
+    badge: 'Hospital',
+    sizes: ['S', 'M', 'L', 'XL'],
+    fabric: 'Cotton',
+    popularity: 80,
+    dateAdded: '2024-02-11',
+    sku: 'EBU-MED-110'
+  },
+  {
+    id: '109',
+    name: 'Barista & Server Canvas Apron',
+    category: 'Hotel & Chef',
+    price: 899,
+    originalPrice: 1299,
+    bulkTierPrice: 650,
+    rating: 4.7,
+    reviewsCount: 77,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDcxZrnNuv_g2-Txy27DDBDTvSkWmhCBQ0GMKAOKDBJBvHv6i5izzXVMBC-Z-Xde6Pt9uO6Y-kWcrdeIsAndhCH7jnYxdgX0lb7A0gWMtyyWUNw1P342dkg0nl64e1N1xJFEb1CL_wqVVC6Rp0x1vxMuDxJgj2qwWKtfDDbt4gS5DXiwWLBNDXZtCYWzHG9VNphDNmckmc3pGrJR-GD1VqiSVP9Ms39PhqrrmRGYlwkz9WNYYHuo64',
+    description: 'Water-resistant rugged cotton duck canvas with adjustable ergonomic back straps and brass rivets.',
+    badge: 'Hotel & Chef',
+    sizes: ['Free Size'],
+    fabric: 'Cotton',
+    popularity: 89,
+    dateAdded: '2024-02-28',
+    sku: 'EBU-HOS-208'
+  },
+  {
+    id: '110',
+    name: 'Commander Ceremonial Blazer',
+    category: 'Security',
+    price: 2100,
+    originalPrice: 2399,
+    bulkTierPrice: 1750,
+    rating: 4.6,
+    reviewsCount: 53,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAZKtYPHaEhVs8htWN5hKBU4zXzmM3ki8K9eIbLQcn5bbJem0PK_DxoyV_tSQ6qn4Fhced1JwD1N2imC8_oNpSVZmlMurNyHzbo86R2H1WrQeJudDFRX7OXnh3oxDxMlEBbdKSclLNXB9FHCdM84EmTR8SFVEJ9hoIYyHj0o0uYp3K8MDf92yLtGgMneMLFONAnMEQZc-2Zra7Liprfdxp8p98K9llE4gyTSo300DerWlfj6J4n-HU',
+    description: 'Structured poly-viscose gabardine with internal concealed equipment stash pockets and gold buttons.',
+    badge: 'Security',
+    sizes: ['M', 'L', 'XL', 'XXL'],
+    fabric: 'Poly-Viscose',
+    popularity: 79,
+    dateAdded: '2024-01-08',
+    sku: 'EBU-SEC-409'
+  },
+  {
+    id: '111',
+    name: 'Rugged Flex Work Cargo Pant',
+    category: 'Industrial',
+    price: 1450,
+    originalPrice: 1799,
+    bulkTierPrice: 1150,
+    rating: 4.8,
+    reviewsCount: 176,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA7YuI2dosFbRb0clO6NCHTEw1lsn_ftT0z1EfHsAcKVdYFJmkKWq_vOqHjSa1qLcu2HH1qJ_YV6ZsdJRICLFeoTyjTo9WmLHLnQgU-K7dOFW2umgw_AowV6HnB-gXEEYQI6uODwBD8A9I54CpaBq9PsySuV__qNwSdyGOxoXKdjQRQMXCGEmSqxUtcIyh_7Nbg24AM-LtEnOCqifeWSu9fNC7zO_OCOA32bmBUXEzdgyM13WJRi94',
+    description: 'Cordura-reinforced knee pad slots with 6 gusseted heavy utility cargo pockets.',
+    badge: 'Industrial',
+    sizes: ['30', '32', '34', '36', '38'],
+    fabric: 'Cotton',
+    popularity: 91,
+    dateAdded: '2024-03-08',
+    sku: 'EBU-IND-508'
+  },
+  {
+    id: '112',
+    name: 'Event Crewneck Uniform Tee',
+    category: 'Custom Tees',
+    price: 550,
+    originalPrice: 750,
+    bulkTierPrice: 360,
+    rating: 4.9,
+    reviewsCount: 285,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBhU98TGFZt8Tq-okh56znIa6MGzR6wAxkhvKnpgO66xh8Mr34XZ2GtLQ4FWl7KweipGyJljnPSfAzIVidq39QSBrHCxgAM6RB_BCKZXo6lnw2PKb5qnVR6mOK2MaOASY0OJRVGJLkNr7eIy7GPjbDJ9Tf2_hyWeyABJZd0jtfa9AQT3NdNcHsRTK_c5JfHyzRpTwFFx_SCNht3t3KSzYyaFOp8eJ7mgEY6LGx2yah9hK1eLjaQ-As',
+    description: '180 GSM pre-shrunk pure cotton crewneck tailored for high-volume brand screen printing.',
+    badge: 'Custom Tees',
+    sizes: ['S', 'M', 'L', 'XL', '3XL'],
+    fabric: 'Cotton',
+    popularity: 94,
+    dateAdded: '2024-03-14',
+    sku: 'EBU-TEE-608'
+  }
+];
+
+export const PAIRED_ACCESSORIES: PairedProduct[] = [
+  {
+    id: 'acc-1',
+    name: 'Structured Security Cap',
+    category: 'Headwear',
+    price: 249,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDT5rl2bsKWwCnAsN_dQLSsQpXCp5CTWDAF8rnULxdU0JUvvWjmFRf01i2CrgPFSVqfimoiGM8lBCe6kmx2q2xeMU2zs-Uh0bBqiGmyKmiAkOWSjbx_dz3PyyfMX_43Lt33MuGVsygbYXXb17eKIt4OwrcsAf9oWrPLndCVYOD7j67A1WuBEl5URnNQyA6sklEs-8zi3ZRR2RjCrUhrkwsLFYmtRZUCDvb92LzUd8I2nGggzTalCpU'
+  },
+  {
+    id: 'acc-2',
+    name: 'High-Grip Duty Belt',
+    category: 'Hardware',
+    price: 399,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBITengUwyjH6l71o6CfXFu5aO09ZwNjDygb6aYhMwCsPh9TrxxtLCkkNpDnknuiKDoDnI7p9p-Cp71j8-tOrg6LOsxBtC95xZljf_EcoVhQdxgtmCaG7gjun8TjOWDihJNBrvTBvs_Df2iFQOPmtbeUyJAEn-odsKOPXr7dVfZEHkhRX0FPAepY8QmhGf2gJHFezOGpAu4M1A828auP4UvaurGiRFMKd3RW1-JIJWStPAxy7G5d0M'
+  },
+  {
+    id: 'acc-3',
+    name: 'Reflective Armband',
+    category: 'Safety',
+    price: 149,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBRgH4hPr7LW0TvBuBf8lC7lIP8jnm73g_dN6HTzH3gzv-hkdDYb20rngxaBp11_w8sH9hFCSK7U9-rlEi1RT02E82ryaR5zxUs5I1cWvYID-nBmMJF8nUm2nb-UUtOfIx_kqeOrXRPIFLCzArxgpcU-gcLpUCMfynxfbnHbrp4uE3dEa9HNWt6huCnVJsVYL-LQpAvbRajePKEBWskEhWNiVUCIC1QqlZvpnCbFUhs7MaolM9CEE0'
+  },
+  {
+    id: 'acc-4',
+    name: 'Tactical Security Boots',
+    category: 'Footwear',
+    price: 1899,
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD34nuNg2xzyvryHojtokkCCVnfRXSnOUH7mfi6yfObAXxk_nmzOVGvqrItrV3k7FYK-81IUCDJ6dZ8UTh9Fe1pRPXDux-3ujd4qByiOpHRtkOkdPEjboaRW3wlhLjl4yn91kyYO-t0XzYy-ARqzFCNdj-iDuaO8o3Cdse2eb0KOfnmVEN7flrxOcnoBX-0IFf5U9iogW_ldvrCracNVyqeCDddCcHlHqGmJtcIlos21R0i3rY41CE'
+  }
+];
+
+export const INITIAL_CART_ITEMS = [
+  {
+    id: 'c1',
+    productId: '101',
+    name: 'Tactical Security Guard Set',
+    price: 1499,
+    originalPrice: 1799,
+    qty: 2,
+    size: 'L',
+    color: 'Navy Blue',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDQBMneWSYzoDRq1sfAtmsnowiM59SiLoXOqUT36z_6T3JnUJAQb5Q9bZRpZN-iAY5Ts2Us2sKD7egGNfJW46BEmrw2kFiXatEr58SloQPYLCPhCfPYiH4PHTzrIHips0IuxRbo4H3ZSxUMPj2JXBk9IpJIz6t8IFQPi4SHkn6bkkawg4w1CM8wRSPKW2VnpbQe1kHuenIBJpfGVikNi3RkI-7DyFt7E8XBvgSysZuTneKRZ2rYYhQ',
+    tierBadge: 'B2B Tier'
+  },
+  {
+    id: 'c2',
+    productId: '102',
+    name: 'Medical Antibacterial Scrub',
+    price: 899,
+    originalPrice: 1250,
+    qty: 1,
+    size: 'M',
+    color: 'Teal Green',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD9YnyP4UbIs0RkXkLdWRUCsmV1LIM8brfkX7eihA0qhpidUMnOGXvWcm1n03uR8KtJhIErQ-LYgg0im5pMGDqo5vlbnRg7tBMDrecnPmogAGzQ4lgZwEtrTqin3NK32mzci6zEicIzwsjbhZZp4uOGi2JYXLiK6bpmNeTKhAz7jmYjLRPgnTHXDBH5OaAyMDrXCN20fHyvSjh-LB4a-OX2vrlSb0y8bWzTGzGiGgTb8OBqUo-uKPY',
+    tierBadge: 'Anti-Microbial'
+  },
+  {
+    id: 'c3',
+    productId: '103',
+    name: 'Executive Chef Coat Master',
+    price: 1450,
+    originalPrice: 1990,
+    qty: 1,
+    size: 'XL',
+    color: 'White',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBQKAGlwVObFx36gzRTviYNeQ3as0jxiUvK8Zi8-BPNqSaYs42ovcDbsr7RcTqKv45clWccz3n56K4esGnazo9u4OKwvG4A-8DNnrsnjdbldrOFpmjRP0uthVzJRpoc4k7PHBr4PnT26yTJExvTqr_EUvHds-TSfqEnDWec4fdhVlKebLlX5-tRAp9gseHsfZj-7Z76lKA9MiT6z2Owxl71MzVARjXdppMlmP1BNZWtRS8XQQfa-jM',
+    tierBadge: 'Master Series'
+  }
+];
